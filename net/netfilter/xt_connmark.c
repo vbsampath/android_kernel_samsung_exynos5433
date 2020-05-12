@@ -76,6 +76,7 @@ struct knox_meta_param {
 
 static unsigned int knoxvpn_uidpid(struct sk_buff *skb, u_int32_t newmark)
 {
+/* commented out by edp17 to avoid the KNOW message flood in logs
 	int szMetaData;
 	struct skb_shared_info *knox_shinfo = NULL;
 
@@ -107,6 +108,7 @@ static unsigned int knoxvpn_uidpid(struct sk_buff *skb, u_int32_t newmark)
 	}
 
 	return 0;
+*/
 }
 
 // ------------- END of KNOX_VPN -------------------//
