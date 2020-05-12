@@ -106,9 +106,9 @@ static unsigned int knoxvpn_uidpid(struct sk_buff *skb, u_int32_t newmark)
 		knox_shinfo->pid = skb->sk->knox_pid;
 		knox_shinfo->knox_mark = newmark;
 	}
-
-	return 0;
 */
+	return 0;
+
 }
 
 // ------------- END of KNOX_VPN -------------------//
