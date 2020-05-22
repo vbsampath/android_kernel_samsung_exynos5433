@@ -1748,7 +1748,7 @@ CONFIG_BROADCOM_WIFI=y
 # CONFIG_BCM4335 is not set
 # CONFIG_BCM4339 is not set
 # CONFIG_BCM4354 is not set
-CONFIG_BCM4358=m
+CONFIG_BCM4358=y
 # CONFIG_BCM4358_A3 is not set
 # CONFIG_BCM43241 is not set
 CONFIG_BCMDHD_FW_PATH="/system/etc/wifi/bcmdhd_sta.bin"
@@ -4380,7 +4380,7 @@ CONFIG_NETWORK_FILESYSTEMS=y
 # CONFIG_NFS_FS is not set
 # CONFIG_NFSD is not set
 # CONFIG_CEPH_FS is not set
-# CONFIG_CIFS is not set
+CONFIG_CIFS=y
 # CONFIG_NCP_FS is not set
 # CONFIG_CODA_FS is not set
 # CONFIG_AFS_FS is not set
