@@ -562,7 +562,7 @@ static void wacom_i2c_set_input_values(struct i2c_client *client,
 	__set_bit(BTN_LEFT, input_dev->keybit);
 	__set_bit(BTN_TOOL_PEN, input_dev->keybit);
 	__set_bit(BTN_TOOL_RUBBER, input_dev->keybit);
-	__set_bit(BTN_STYLUS, input_dev->keybit);
+	__set_bit(BTN_RIGHT, input_dev->keybit);
 	__set_bit(KEY_UNKNOWN, input_dev->keybit);
 	//__set_bit(KEY_PEN_PDCT, input_dev->keybit);
 	__set_bit(ABS_DISTANCE, input_dev->absbit);

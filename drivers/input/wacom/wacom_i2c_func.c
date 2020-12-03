@@ -34,7 +34,7 @@ void forced_release(struct wacom_i2c *wac_i2c)
 	input_report_abs(wac_i2c->input_dev, ABS_Y, 0);
 	input_report_abs(wac_i2c->input_dev, ABS_PRESSURE, 0);
 	input_report_abs(wac_i2c->input_dev, ABS_DISTANCE, 0);
-	input_report_key(wac_i2c->input_dev, BTN_STYLUS, 0);
+	input_report_key(wac_i2c->input_dev, BTN_RIGHT, 0);
 	input_report_key(wac_i2c->input_dev, BTN_LEFT, 0);
 	input_report_key(wac_i2c->input_dev, BTN_TOOL_RUBBER, 0);
 	input_report_key(wac_i2c->input_dev, BTN_TOOL_PEN, 0);
@@ -784,7 +784,7 @@ int wacom_i2c_coord(struct wacom_i2c *wac_i2c)
 		input_report_abs(wac_i2c->input_dev,
 			ABS_TILT_Y, tilt_y);
 		input_report_key(wac_i2c->input_dev,
-			BTN_STYLUS, stylus);
+			BTN_RIGHT, stylus);
 		input_report_key(wac_i2c->input_dev, BTN_LEFT, prox);
 		input_report_key(wac_i2c->input_dev, wac_i2c->tool, 1);
 		input_sync(wac_i2c->input_dev);
@@ -826,7 +826,7 @@ int wacom_i2c_coord(struct wacom_i2c *wac_i2c)
 			input_report_abs(wac_i2c->input_dev, ABS_PRESSURE, 0);
 			input_report_abs(wac_i2c->input_dev,
 				ABS_DISTANCE, 0);
-			input_report_key(wac_i2c->input_dev, BTN_STYLUS, 0);
+			input_report_key(wac_i2c->input_dev, BTN_RIGHT, 0);
 			input_report_key(wac_i2c->input_dev, BTN_LEFT, 0);
 			input_report_key(wac_i2c->input_dev,
 				BTN_TOOL_RUBBER, 0);
